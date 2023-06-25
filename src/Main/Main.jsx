@@ -1,11 +1,11 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Home from '../Pages/Home/Home';
+import Navigation from '../Pages/Navigation/Navigation';
 
 const Main = () => {
     return (
         <div>
-            <Home></Home>
+            <Navigation></Navigation>
             <Outlet></Outlet>
         </div>
     );
