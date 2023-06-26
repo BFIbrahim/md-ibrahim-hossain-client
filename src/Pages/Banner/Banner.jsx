@@ -23,8 +23,8 @@ const Banner = () => {
     }
 
     return (
-        <div className='banner-wrap md:h-96'>
-            <div className='bg-[#000921] bg-opacity-80 md:h-96'>
+        <div className='banner-wrap md:h-[450px]'>
+            <div className='bg-[#000921] bg-opacity-80 md:h-[450px]'>
                 <div className='md:flex items-center py-10 md:py-20 lg:py-20 text-center md:text-start lg:text-start'>
 
                     <div className='md:w-96'>
