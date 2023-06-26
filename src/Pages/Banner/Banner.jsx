@@ -27,7 +27,7 @@ const Banner = () => {
             <div className='bg-[#000921] bg-opacity-80 md:h-96'>
                 <div className='md:flex items-center py-10 md:py-20 lg:py-20 text-center md:text-start lg:text-start'>
 
-                    <div className='w-96'>
+                    <div className='md:w-96'>
                         <img className='rounded-full w-36 md:w-60 lg:w-60 h-36 md:h-60 lg:h-60 border-x-8 border-gray-400 mx-auto mt-5' src="https://i.postimg.cc/LXLfcW2x/Md-Ibrahim.jpg" alt="" />
                     </div>
 
@@ -46,7 +46,7 @@ const Banner = () => {
 
                         <p className='text-white mt-5 px-3 md:px-0 lg:px-0'>Innovative MERN stack developer crafting dynamic web applications, merging creativity with expertise. Let's create exceptional digital experiences!</p>
 
-                       <button onClick={() => {hundleDownloadResume(fileURL)}} className='btn border-none text-white bg-red-500 mt-5 hover:bg-gray-300 hover:bg-opacity-40'>Download Resume</button>
+                        <button onClick={() => { hundleDownloadResume(fileURL) }} className='btn border-none text-white bg-red-500 mt-5 hover:bg-gray-300 hover:bg-opacity-40'>Download Resume</button>
                     </div>
 
                     <div className='flex md:flex-col lg:flex-col w-36 mx-auto mt-5'>

@@ -17,7 +17,7 @@ const Navigation = () => {
     }
 
     return (
-        <div className="navbar fixed z-10  md:max-w-6xl mx-auto" >
+        <div className="navbar absolute z-10  md:max-w-6xl mx-auto" >
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -31,8 +31,6 @@ const Navigation = () => {
                         <li><Link className='hover:text-red-500 hover:font-semibold'>Projects</Link></li>
 
                         <li><Link className='hover:text-red-500 hover:font-semibold'>Blog</Link></li>
-
-                        <li><Link onClick={() => { hundleDownloadResume(fileURL) }} className='hover:text-red-500 hover:font-semibold'>Download Resume</Link></li>
                     </ul>
                 </div>
                 <img className='ps-5 w-12' src="https://i.postimg.cc/g0NXBD9d/layers.png" alt="" />
@@ -42,8 +40,7 @@ const Navigation = () => {
                     <li className='text-white'><Link className='hover:text-red-500 hover:font-semibold'>Home</Link></li>
                     <li className='text-white'><Link className='hover:text-red-500 hover:font-semibold'>About</Link></li>
                     <li className='text-white'><Link className='hover:text-red-500 hover:font-semibold'>Projects</Link></li>
-                    <li className='text-white'><Link className='hover:text-red-500 hover:font-semibold'>Blog</Link></li>
-                    <li className='text-white'><Link onClick={() => { hundleDownloadResume(fileURL) }} className='hover:text-red-500 hover:font-semibold'>Download Resume</Link></li>
+                    <li className='text-white'><Link className='hover:text-red-500 hover:font-semibold'>Blog</Link></li> 
                 </ul>
             </div>
             <div className="navbar-end">
