@@ -5,7 +5,7 @@ const About = () => {
 
     return (
         <div>
-            <div className='md:flex justify-evenly items-center mt-14 gap-5'>
+            <div className='md:flex justify-evenly items-center mt-36 gap-5'>
                 <div data-aos="fade-up-right"
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="1000" className='md:w-[30%] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]'>
@@ -41,6 +41,8 @@ const About = () => {
                     </div>
 
                     <button onClick={() => { hundleDownloadResume(fileURL) }} className='btn border-none text-white bg-pink-600 mt-5 hover:bg-gray-300 hover:bg-opacity-60 hover:text-black'>Contact Me</button>
+
+                    <button onClick={() => { hundleDownloadResume(fileURL) }} className='btn border-none text-white bg-gray-600 bg-opacity-50 mt-5 hover:bg-gray-300 hover:bg-opacity-60 hover:text-black ms-5'>Read More</button>
 
                 </div>
 

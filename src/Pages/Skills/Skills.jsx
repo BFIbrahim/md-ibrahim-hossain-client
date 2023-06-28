@@ -1,7 +1,5 @@
-import React, { useRef, useState } from 'react';
-import CounterUp from 'react-countup'
+import React, { } from 'react';
 import Lottie from 'lottie-react'
-import ScrollTrigger from 'react-scroll-trigger'
 import HTMLAnimation from '../../assets/HTML.json'
 import CSSAnimation from '../../assets/CSS.json'
 import JSAnimation from '../../assets/JS.json'
@@ -12,14 +10,10 @@ import MongoAnimation from '../../assets/Mongo.json'
 
 const Skills = () => {
 
-    const [counterOn, setCounterON] = useState(false)
-
-
-
     return (
-        <ScrollTrigger onEnter={() => { setCounterON(true) }} onExit={() => { setCounterON(false) }}>
+    
             <div className='p-10 bg-gray-100  mt-10'>
-                <h1 className='text-center font-bold text-3xl uppercase mb-10 border-gray-400 border-b-2 pb-3 w-56 mx-auto'>My Skills</h1>
+                <h1 className='text-center font-bold text-3xl uppercase mb-10 border-gray-400 border-b-2 pb-3 w-56 mx-auto'>My Top Skills</h1>
                 <div  data-aos="fade-up"
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="1000" className='grid md:grid-cols-2 lg:grid-cols-2 gap-5'>
@@ -109,7 +103,6 @@ const Skills = () => {
 
                 </div>
             </div>
-        </ScrollTrigger>
 
     );
 };

@@ -60,6 +60,23 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
+
+            <div className='grid grid-cols-3 gap-2'>
+                <div className='text-center bg-gray-300 p-3'>
+                    <img className='mx-auto w-10 h-10' src="https://i.ibb.co/7kwJCw8/coding.png" alt="" />
+                    <h3 className='font-bold text-black'>Responsive Website Design</h3>
+                </div>
+
+                <div className='text-center bg-gray-300 p-3'>
+                    <img className='mx-auto' src="https://i.ibb.co/4NhsPZJ/coding-1.png" alt="" />
+                    <h3 className='font-bold text-black'>Website Development</h3>
+                </div>
+
+                <div className='text-center bg-gray-300 p-3'>
+                    <img className='mx-auto' src="https://i.ibb.co/NF0xRrF/coding-2.png" alt="" />
+                    <h3 className='font-bold text-black'>Website Managment</h3>
+                </div>
+            </div>
         </div>
     );
 };
