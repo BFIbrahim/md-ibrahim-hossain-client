@@ -1,6 +1,14 @@
 import React, { useRef, useState } from 'react';
 import CounterUp from 'react-countup'
+import Lottie from 'lottie-react'
 import ScrollTrigger from 'react-scroll-trigger'
+import HTMLAnimation from '../../assets/HTML.json'
+import CSSAnimation from '../../assets/CSS.json'
+import JSAnimation from '../../assets/JS.json'
+import ReactAnimation from '../../assets/React.json'
+import NodeJsAnimation from '../../assets/nodeJS.json'
+import MongoAnimation from '../../assets/Mongo.json'
+
 
 const Skills = () => {
 
@@ -10,98 +18,95 @@ const Skills = () => {
 
     return (
         <ScrollTrigger onEnter={() => { setCounterON(true) }} onExit={() => { setCounterON(false) }}>
-            <div className='mt-24 mb-20'>
-                <h1 className=' font-bold text-4xl text-center'>My Skilss</h1>
-                <p className='text-center text-red-500 font-bold mb-10'>--------------------------------</p>
-                <div>
-                    <div data-aos="fade-up"
+            <div className='p-10 bg-gray-100  mt-10'>
+                <h1 className='text-center font-bold text-3xl uppercase mb-10 border-gray-400 border-b-2 pb-3 w-56 mx-auto'>My Skills</h1>
+                <div  data-aos="fade-up"
                     data-aos-easing="ease-out-cubic"
-                    data-aos-duration="1500" className='grid md:grid-cols-2 lg:grid-cols-4 gap-10'>
-                        <div className='text-center shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] rounded-md py-5 hover:bg-red-500 hover:text-white cursor-pointer'>
-                            <h1 className=' font-bold mt-2 mb-2'>HTML</h1>
-                            <img className='w-16 mx-auto' src="https://i.postimg.cc/x1K6yG6H/html.png" alt="" />
+                    data-aos-duration="1000" className='grid md:grid-cols-2 lg:grid-cols-2 gap-5'>
+                    
+                    <div className='flex items-center gap-5'>
+                        <div className='flex items-center gap-5'>
+                            <p className=' w-24 h-24 rounded-full flex items-center justify-center shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'><Lottie className='' animationData={HTMLAnimation} /></p>
 
-                            <p className=' font-bold mt-3 text-3xl' data-val='90'>
-                                {counterOn && <CounterUp start={0} end={90} duration={2} delay={0} />}
-                                %</p>
-
-                        </div>
-                        <div className='text-center shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] rounded-md py-5 hover:bg-red-500 hover:text-white cursor-pointer'>
-
-                            <h1 className=' font-bold mt-2 mb-2'>CSS</h1>
-
-                            <img className='w-16 mx-auto' src="https://i.postimg.cc/mrtHjBw9/css-3-1.png" alt="" />
-
-                            <p className=' font-bold mt-3 text-3xl' data-val='90'>
-                                {counterOn && <CounterUp start={0} end={80} duration={2} delay={0} />}
-                                %</p>
-                        </div>
-                        <div className='text-center shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] rounded-md py-5 hover:bg-red-500 hover:text-white cursor-pointer'>
-
-                            <h1 className=' font-bold mt-2 mb-2'>Tailwind</h1>
-
-                            <img className='w-16 mx-auto' src="https://i.postimg.cc/nhSdrS5F/Tailwind.png" alt="" />
-
-                            <p className=' font-bold mt-3 text-3xl' data-val='90'>
-                                {counterOn && <CounterUp start={0} end={85} duration={2} delay={0} />}
-                                %</p>
-                        </div>
-                        <div className='text-center shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] rounded-md py-5 hover:bg-red-500 hover:text-white cursor-pointer'>
-
-                            <h1 className=' font-bold mt-2 mb-2'>Bootstrap</h1>
-
-                            <img className='w-16 mx-auto' src="https://i.postimg.cc/90XTGCRv/Bootstrap.png" alt="" />
-
-                            <p className=' font-bold mt-3 text-3xl' data-val='90'>
-                                {counterOn && <CounterUp start={0} end={85} duration={2} delay={0} />}
-                                %</p>
+                            <p className='w-[80%]'>
+                                <h1 className='text-2xl font-bold'>HTML</h1>
+                                <p className='text-gray-800'>Proficient in creating structured and semantically meaningful web pages.</p>
+                            </p>
                         </div>
                     </div>
 
-                    <div data-aos="fade-up"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="1500" className='grid md:grid-cols-2 lg:grid-cols-4 gap-10 mt-6'>
+                    <div className='flex items-center gap-5'>
+                        <div className='flex items-center gap-5'>
+                            <p className=' w-24 h-24 rounded-full flex items-center justify-center shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'><Lottie className='' animationData={CSSAnimation} /></p>
 
-                        <div className='text-center shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] rounded-md py-5 hover:bg-red-500 hover:text-white cursor-pointer'>
-                            <h1 className=' font-bold mt-2 mb-2'>JavaScript</h1>
-                            <img className='w-16 mx-auto' src="https://i.postimg.cc/4ynGF6w4/JS.png" alt="" />
-
-                            <p className=' font-bold mt-3 text-3xl' data-val='90'>
-                                {counterOn && <CounterUp start={0} end={60} duration={2} delay={0} />}
-                                %</p>
-
-                        </div>
-                        <div className='text-center shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] rounded-md py-5 hover:bg-red-500 hover:text-white cursor-pointer'>
-
-                            <h1 className=' font-bold mt-2  mb-2'>React.js</h1>
-
-                            <img className='w-16 mx-auto' src="https://i.postimg.cc/JzNqv9s0/React.png" alt="" />
-
-                            <p className=' font-bold mt-3 text-3xl' data-val='90'>
-                                {counterOn && <CounterUp start={0} end={60} duration={2} delay={0} />}
-                                %</p>
-                        </div>
-                        <div className='text-center shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] rounded-md py-5 hover:bg-red-500 hover:text-white cursor-pointer'>
-
-                            <h1 className=' font-bold mt-2  mb-2'>Node.js</h1>
-
-                            <img className='w-16 mx-auto' src="https://i.postimg.cc/hjjNSSmp/Nodejs.png" alt="" />
-
-                            <p className=' font-bold mt-3 text-3xl' data-val='90'>
-                                {counterOn && <CounterUp start={0} end={45} duration={2} delay={0} />}
-                                %</p>
-                        </div>
-                        <div className='text-center shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)] rounded-md py-5 hover:bg-red-500 hover:text-white cursor-pointer'>
-
-                            <h1 className=' font-bold mt-2 mb-2'>MongoDB</h1>
-
-                            <img className='w-16 mx-auto' src="https://i.postimg.cc/G3Z3SN0Z/MongoDB.png" alt="" />
-
-                            <p className=' font-bold mt-3 text-3xl' data-val='90'>
-                                {counterOn && <CounterUp start={0} end={45} duration={2} delay={0} />}
-                                %</p>
+                            <p className='w-[80%]'>
+                                <h1 className='text-2xl font-bold'>CSS</h1>
+                                <p className='text-gray-800'>Skilled in designing and styling web pages, enhancing visual appeal and user experience.</p>
+                            </p>
                         </div>
                     </div>
+                    <div className='flex items-center gap-5'>
+                        <div className='flex items-center gap-5'>
+                            <p className=' w-24 h-24 rounded-full flex items-center justify-center shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'><img className='w-14 h-14' src="https://i.postimg.cc/nhSdrS5F/Tailwind.png" alt="" /></p>
+
+                            <p className='w-[80%]'>
+                                <h1 className='text-2xl font-bold'>Tailwind</h1>
+                                <p className='text-gray-800'>Experienced in using Tailwind CSS framework for efficient and rapid UI development..</p>
+                            </p>
+                        </div>
+                    </div>
+                    <div className='flex items-center gap-5'>
+                        <div className='flex items-center gap-5'>
+                            <p className=' w-24 h-24 rounded-full flex items-center justify-center shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'><img className='w-14 h-14' src="https://i.postimg.cc/90XTGCRv/Bootstrap.png" alt="" /></p>
+
+                            <p className='w-[80%]'>
+                                <h1 className='text-2xl font-bold'>Bootstrap</h1>
+                                <p className='text-gray-800'>Proficient in utilizing Bootstrap framework for responsive and mobile-friendly web design.</p>
+                            </p>
+                        </div>
+                    </div>
+                    <div className='flex items-center gap-5'>
+                        <div className='flex items-center gap-5'>
+                            <p className=' w-24 h-24 rounded-full flex items-center justify-center shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'><Lottie className='w-40 h-40' animationData={JSAnimation} /></p>
+
+                            <p className='w-[80%]'>
+                                <h1 className='text-2xl font-bold'>JavaScript</h1>
+                                <p className='text-gray-800'> Proficient in using JavaScript to create interactive and dynamic elements on web pages.</p>
+                            </p>
+                        </div>
+                    </div>
+                    <div className='flex items-center gap-5'>
+                        <div className='flex items-center gap-5'>
+                            <p className=' w-24 h-24 rounded-full flex items-center justify-center shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'><Lottie className='w-20 h-20' animationData={ReactAnimation} /></p>
+
+                            <p className='w-[80%]'>
+                                <h1 className='text-2xl font-bold'>React</h1>
+                                <p className='text-gray-800'>Skilled in developing interactive and scalable user interfaces using the React JavaScript library.</p>
+                            </p>
+                        </div>
+                    </div>
+                    <div className='flex items-center gap-5'>
+                        <div className='flex items-center gap-5'>
+                            <p className=' w-24 h-24 rounded-full flex items-center justify-center shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'><Lottie className='' animationData={NodeJsAnimation} /></p>
+
+                            <p className='w-[80%]'>
+                                <h1 className='text-2xl font-bold'>Node.JS</h1>
+                                <p className='text-gray-800'>Experienced in building server-side applications and APIs using Node.js for efficient back-end development.</p>
+                            </p>
+                        </div>
+                    </div>
+                    <div className='flex items-center gap-5'>
+                        <div className='flex items-center gap-5'>
+                            <p className=' w-24 h-24 rounded-full flex items-center justify-center shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'><Lottie className='' animationData={MongoAnimation} /></p>
+
+                            <p className='w-[80%]'>
+                                <h1 className='text-2xl font-bold'>MongoDB</h1>
+                                <p className='text-gray-800'>Proficient in working with MongoDB, a NoSQL database, for storing and retrieving data in web applications.</p>
+                            </p>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </ScrollTrigger>

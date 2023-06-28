@@ -13,6 +13,7 @@ const fileURL = 'Md._Ibrahim_developer_resume.pdf'
 
 const Banner = () => {
 
+
     const hundleDownloadResume = (url) => {
         const angcor = document.createElement('a')
         angcor.href = url
@@ -21,18 +22,17 @@ const Banner = () => {
         angcor.click()
         angcor.remove()
     }
-
     return (
         <div className='banner-wrap md:h-[450px]'>
             <div className='bg-[#000921] bg-opacity-80 md:h-[450px]'>
                 <div className='md:flex items-center py-10 md:py-20 lg:py-20 text-center md:text-start lg:text-start'>
 
                     <div className='md:w-96'>
-                        <img className='rounded-full w-36 md:w-60 lg:w-60 h-36 md:h-60 lg:h-60 border-x-8 border-gray-400 mx-auto mt-5' src="https://i.postimg.cc/LXLfcW2x/Md-Ibrahim.jpg" alt="" />
+                        <img className='rounded-full w-36 md:w-60 lg:w-60 h-36 md:h-60 lg:h-60 mx-auto mt-10 shadow-[0_5px_10px_rgba(240,_46,_170,_0.7)]' src="https://i.postimg.cc/LXLfcW2x/Md-Ibrahim.jpg" alt="" />
                     </div>
 
                     <div className='md:w-[600px]'>
-                        <p className='text-red-500 font-semibold mt-2'>Hi There...</p>
+                        <p className='text-pink-600  font-semibold mt-2'>Hi There...</p>
                         <h1 className='font-bold text-1xl  md:text-2xl lg:text-2xl text-white uppercase mt-2'>
                             <Typewriter
                                 options={{
@@ -44,9 +44,9 @@ const Banner = () => {
                             />
                         </h1>
 
-                        <p className='text-white mt-5 px-3 md:px-0 lg:px-0'>Innovative MERN stack developer crafting dynamic web applications, merging creativity with expertise. Let's create exceptional digital experiences!</p>
+                        <p className='text-white  mt-5 px-3 md:px-0 lg:px-0'>Innovative MERN stack developer crafting dynamic web applications, merging creativity with expertise. Let's create exceptional digital experiences!</p>
 
-                        <button onClick={() => { hundleDownloadResume(fileURL) }} className='btn border-none text-white bg-red-500 mt-5 hover:bg-gray-300 hover:bg-opacity-40'>Download Resume</button>
+                        <button onClick={() => { hundleDownloadResume(fileURL) }} className='btn border-none text-pink-60  mt-5 hover:bg-gray-300 hover:bg-opacity-40 resume-btn text-white bg-pink-600'>Download Resume</button>
                     </div>
 
                     <div className='flex md:flex-col lg:flex-col w-36 mx-auto mt-5'>
