@@ -15,11 +15,11 @@ const Projects = () => {
     const [counterOn, setCounterON] = useState(false)
 
     return (
-        <div className='text-center mt-14'>
-            <h1 className=' font-bold text-4xl text-center pt-10 mb-10 uppercase border-gray-400 md:w-2/6 mx-auto border-b-2 pb-3'>My Recent Project</h1>
+        <div id='project' className='text-center mt-14 mb-20'>
+            <h1 className=' font-bold text-4xl text-center pt-10 mb-10 uppercase border-sky-500 text-white md:w-2/6 mx-auto border-b-2 pb-3'>My Recent Projects</h1>
 
             <ScrollTrigger onEnter={() => { setCounterON(true) }} onExit={() => { setCounterON(false) }}>
-                <div className='p-5 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] w-56 mx-auto rounded-md bg-pink-600 text-white'>
+                <div className='p-5 shadow-[0_10px_15px_rgba(8,_112,_184,_0.7)] w-56 mx-auto rounded-md bg-sky-500 text-white mb-14'>
                     <p className=' font-bold text-3xl' data-val='90'>
                         {counterOn && <CounterUp start={0} end={30} duration={2} delay={0} />}+
                     </p>
@@ -27,29 +27,80 @@ const Projects = () => {
                 </div>
             </ScrollTrigger>
 
+
             <div data-aos="fade-up"
                 data-aos-easing="ease-out-cubic"
-                data-aos-duration="1000" className='md:flex items-center gap-10'>
-                <div className='md:w-[35%] mx-auto mb-20'>
-                    <Lottie animationData={Project} />
-                </div>
+                data-aos-duration="1000" className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5 md:gap-0 lg:gap-0 p-5 md:p-0 lg:p-0'>
+                <div className="md:w-[300px] md:h-[300px] base-100 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] mx-auto ">
+                    <figure><img className='rounded-t-md' src="https://i.ibb.co/t4LzXfK/1.jpg" alt="Shoes" /></figure>
+                    <div className='grid grid-cols-3 shadow-[0_10px_15px_rgba(8,_112,_184,_0.7)]'>
+                        <Link to='https://bf-toy-cars.web.app/' target='_default'><button className='btn bg-sky-500 w-full font-bold rounded-none h-16 text-white'><FaArrowAltCircleRight className='text-2xl text-white'></FaArrowAltCircleRight> Live Site </button></Link>
 
-                <div className='md:w-[50%] h-[300px] md:h-[400px] mx-auto shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'>
-                    <div class="h-[100%] overflow-auto">
-                        <img className='h-[auto] w-[100%] block' src="https://i.ibb.co/BqZTc7D/home.png" alt="Your Image" />
-                    </div>
-                    <div className='grid grid-cols-3'>
-                        <Link to='https://bfmi-school.web.app/' target='_default'><button className='btn bg-gray-300 w-full font-bold rounded-none'><FaArrowAltCircleRight className='text-2xl text-gray-600 '></FaArrowAltCircleRight> Live Site </button></Link>
+                        <Link to='https://github.com/BFIbrahim/bf-toys-zone-client' target='_default'><button className='btn bg-sky-500 w-full font-bold rounded-none h-16 text-white'><FaGithub className='text-2xl  text-white '></FaGithub> Client Code </button></Link>
 
-                        <Link to='https://github.com/BFIbrahim/bfmi-school-client' target='_default'><button className='btn bg-gray-300 w-full font-bold rounded-none'><FaGithub className='text-2xl text-gray-600 '></FaGithub> Client Code </button></Link>
-
-                        <Link to='https://github.com/BFIbrahim/bfmi-school-server' target='_default'><button className='btn bg-gray-300 w-full font-bold rounded-none'><FaGithub className='text-2xl text-gray-600 '></FaGithub> Server Code </button></Link>
+                        <Link to='https://github.com/BFIbrahim/bf-toys-zone-server' target='_default'><button className='btn bg-sky-500 w-full font-bold rounded-none h-16 text-white'><FaGithub className='text-2xl text-white '></FaGithub> Server Code </button></Link>
                     </div>
                 </div>
 
+                <div className="md:w-[300px] md:h-[300px] base-100 mx-auto shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]">
+                    <figure><img className='rounded-t-md' src="https://i.ibb.co/bzC1TNr/4.jpg" alt="Shoes" /></figure>
+                    <div className='grid grid-cols-3 shadow-[0_10px_15px_rgba(8,_112,_184,_0.7)]'>
+                        <Link to='https://bf-toy-cars.web.app/' target='_default'><button className='btn bg-sky-500 w-full font-bold rounded-none h-16 text-white'><FaArrowAltCircleRight className='text-2xl text-white'></FaArrowAltCircleRight> Live Site </button></Link>
+
+                        <Link to='https://github.com/BFIbrahim/bf-toys-zone-client' target='_default'><button className='btn bg-sky-500 w-full font-bold rounded-none h-16 text-white'><FaGithub className='text-2xl  text-white '></FaGithub> Client Code </button></Link>
+
+                        <Link to='https://github.com/BFIbrahim/bf-toys-zone-server' target='_default'><button className='btn bg-sky-500 w-full font-bold rounded-none h-16 text-white'><FaGithub className='text-2xl text-white '></FaGithub> Server Code </button></Link>
+                    </div>
+                </div>
+
+                <div className="md:w-[300px] md:h-[300px] base-100 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] mx-auto">
+                    <figure><img className='rounded-t-md' src="https://i.ibb.co/HPb5Hf2/5.jpg" alt="Shoes" /></figure>
+                    <div className='grid grid-cols-2 shadow-[0_10px_15px_rgba(8,_112,_184,_0.7)]'>
+                        <Link to='https://bf-toy-cars.web.app/' target='_default'><button className='btn bg-sky-500 w-full font-bold rounded-none h-16 text-white'><FaArrowAltCircleRight className='text-2xl text-white'></FaArrowAltCircleRight> Live Site </button></Link>
+
+                        <Link to='https://github.com/BFIbrahim/bf-toys-zone-client' target='_default'><button className='btn bg-sky-500 w-full font-bold rounded-none h-16 text-white'><FaGithub className='text-2xl  text-white '></FaGithub>Code </button></Link>
+
+
+                    </div>
+                </div>
             </div>
 
-            <button onClick={() => { hundleDownloadResume(fileURL) }} className='btn border-none text-white bg-pink-600 mt-16 md:mt-16 lg-mt-5 hover:bg-gray-300 hover:bg-opacity-40 mb-4 '>View All Projects</button>
+            <div data-aos="fade-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000" className='mt-0 md:mt-24 lg:mt-24 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5 md:gap-0 lg:gap-0 p-5 md:p-0 lg:p-0'>
+                <div className="md:w-[300px] md:h-[300px] base-100 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] mx-auto">
+                    <figure><img className='rounded-t-md' src="https://i.ibb.co/ccjKnTV/2.jpg" alt="Shoes" /></figure>
+                    <div className='grid grid-cols-2 shadow-[0_10px_15px_rgba(8,_112,_184,_0.7)]'>
+                        <Link to='https://bf-toy-cars.web.app/' target='_default'><button className='btn bg-sky-500 w-full font-bold rounded-none h-16 text-white'><FaArrowAltCircleRight className='text-2xl text-white'></FaArrowAltCircleRight> Live Site </button></Link>
+
+                        <Link to='https://github.com/BFIbrahim/bf-toys-zone-client' target='_default'><button className='btn bg-sky-500 w-full font-bold rounded-none h-16 text-white'><FaGithub className='text-2xl  text-white '></FaGithub>Code </button></Link>
+
+
+                    </div>
+                </div>
+
+                <div className="md:w-[300px] md:h-[300px] base-100 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] mx-auto">
+                    <figure><img className='rounded-t-md' src="https://i.ibb.co/CVMzDbg/6.jpg" alt="Shoes" /></figure>
+                    <div className='grid grid-cols-2 shadow-[0_10px_15px_rgba(8,_112,_184,_0.7)]'>
+                        <Link to='https://bf-toy-cars.web.app/' target='_default'><button className='btn bg-sky-500 w-full font-bold rounded-none h-16 text-white'><FaArrowAltCircleRight className='text-2xl text-white'></FaArrowAltCircleRight> Live Site </button></Link>
+
+                        <Link to='https://github.com/BFIbrahim/bf-toys-zone-client' target='_default'><button className='btn bg-sky-500 w-full font-bold rounded-none h-16 text-white'><FaGithub className='text-2xl  text-white '></FaGithub>Code </button></Link>
+
+
+                    </div>
+                </div>
+
+                <div className="md:w-[300px] md:h-[300px] base-100 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] mx-auto">
+                    <figure><img className='rounded-t-md' src="https://i.ibb.co/7GHctzn/3.jpg" alt="Shoes" /></figure>
+                    <div className='grid grid-cols-2 shadow-[0_10px_15px_rgba(8,_112,_184,_0.7)]'>
+                        <Link to='https://bf-toy-cars.web.app/' target='_default'><button className='btn bg-sky-500 w-full font-bold rounded-none h-16 text-white'><FaArrowAltCircleRight className='text-2xl text-white'></FaArrowAltCircleRight> Live Site </button></Link>
+
+                        <Link to='https://github.com/BFIbrahim/bf-toys-zone-client' target='_default'><button className='btn bg-sky-500 w-full font-bold rounded-none h-16 text-white'><FaGithub className='text-2xl  text-white '></FaGithub>Code </button></Link>
+
+
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
