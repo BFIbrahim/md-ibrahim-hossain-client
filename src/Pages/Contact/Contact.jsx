@@ -1,15 +1,40 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
+
 
 const Contact = () => {
+
+    const form = useRef();
+
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_2qcw5a9', 'template_eu6jkse', form.current, 'bVUvZaTy4Tgu2FAh5')
+            .then((result) => {
+                console.log(result.text);
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'Your message successfully Sent to Md. Ibrahim',
+                    showConfirmButton: false,
+                    timer: 2500
+                })
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+
     return (
         <div id='contact-form' className=' md:p-32'>
 
-            <h1 className='uppercase text-2xl font-bold text-center mb-8 text-white border-b-2 border-sky-500 w-1/4 mx-auto pb-2'>Contat Me</h1>
+            <h1 className='uppercase md:text-2xl font-bold text-center mb-8 text-white border-b-2 border-sky-500 w-2/4 mx-auto pb-2'>Contat Me</h1>
 
-            <div className='grid md:grid-cols-2 items-center'>
+            <div className='grid md:grid-cols-1 lg:grid-cols-2 items-center'>
                 <div data-aos="fade-up"
                     data-aos-easing="ease-out-cubic"
-                    data-aos-duration="1000" className='md:w-2/6 grid grid-cols-3 md:grid-cols-1'>
+                    data-aos-duration="1000" className='md:w-3/6 grid grid-cols-3 md:grid-cols-1 mb-14 mx-auto md:mx-auto lg:mx-0'>
                     <div className='md:w-72 rounded-t-sm bg-gray-800 p-5 text-center shadow-[0_5px_20px_rgba(8,_112,_184,_0.7)]'>
                         <img className='w-14 h-14 mx-auto' src="https://i.ibb.co/8gqfm4q/telephone-1.png" alt="" />
                         <h1 className='text-[18px] font-semibold mt-4 text-white'>+8801835-992202</h1>
@@ -29,31 +54,31 @@ const Contact = () => {
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="1000" className="mt-5 md:mt-0 lg:mt-0">
                         <div className="">
-                            <div className="rounded-sm bg-gray-900 shadow-[0_5px_20px_rgba(8,_112,_184,_0.7)]">
+                            <form ref={form} onSubmit={sendEmail} className="rounded-sm bg-gray-900 shadow-[0_5px_20px_rgba(8,_112,_184,_0.7)]">
                                 <div className="card-body">
+                                    <div className="form-control">
+                                        <label className="label">
+                                            <span className="label-text text-white">Name</span>
+                                        </label>
+                                        <input type="text" name='from_name' placeholder="Your Name" className="input border-gray-700 text-white bg-gray-900" />
+                                    </div>
                                     <div className="form-control">
                                         <label className="label">
                                             <span className="label-text text-white">Email</span>
                                         </label>
-                                        <input type="text" placeholder="email" className="input border-gray-700 text-white bg-gray-900" />
+                                        <input type="text" name='from_email' placeholder="email" className="input border-gray-700 text-white bg-gray-900" required/>
                                     </div>
                                     <div className="form-control">
                                         <label className="label">
                                             <span className="label-text text-white">Message</span>
                                         </label>
-                                        <textarea type="text" name="myTextInput" placeholder="Write your message here" className="input h-36 bg-gray-900 border-gray-700 text-white" />
+                                        <textarea type="text" name="message" placeholder="Write your message here" className="input h-36 bg-gray-900 border-gray-700 text-white" required />
                                     </div>
                                     <div className="form-control mt-6">
-                                        <a href="#_" className=" text-center relative px-5 py-2 font-medium text-white group">
-                                            <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-sky-700 group-hover:bg-sky-700 group-hover:skew-x-12"></span>
-                                            <span class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-sky-500 group-hover:bg-sky-500 group-hover:-skew-x-12"></span>
-                                            <span class="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-sky-500 -rotate-12"></span>
-                                            <span class="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-sky-500 -rotate-12"></span>
-                                            <span class="relative">Send</span>
-                                        </a>
+                                        <input type="submit" value="send" className='bg-sky-500 w-full btn border-none text-white hover:text-black' />
                                     </div>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>

@@ -69,7 +69,7 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
-            <div className='grid grid-cols-3 gap-2 px-4 md:px-0 lg:px-0 md:gap-10 lg:gap-10'>
+            <div className='grid grid-cols-3 gap-2 px-4 md:px-4 lg:px-0 md:gap-10 lg:gap-10 '>
                 <div className='text-center  p-2 md:p-5 lg:p-5 shadow-[0_10px_15px_rgba(8,_112,_184,_0.7)] rounded-md bg-sky-500'>
                     <img className='mx-auto w-10 h-10' src="https://i.ibb.co/dGCHtsG/coding-3.png" alt="" />
                     <h3 className='font-bold text-white'>Responsive Website Design</h3>

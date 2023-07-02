@@ -12,7 +12,7 @@ const Skills = () => {
 
     return (
     
-            <div className='p-10  mt-10'>
+            <div id='skills' className='p-10  mt-10'>
                 <h1 className='text-center font-bold text-3xl uppercase mb-10 border-sky-500 border-b-2 text-white pb-3 w-56 mx-auto'>My Top Skills</h1>
                 <div  data-aos="fade-up"
                     data-aos-easing="ease-out-cubic"

@@ -17,6 +17,8 @@ const Fotter = () => {
                 <div className='bg-[#1F2937] p-10 md:w-1/2'>
                     <div className=''>
                         <p>Md. Ibrahim Hossain<br />A Professional MERN stack developer</p>
+                        <p>+8801835-992202</p>
+                        <p>mdibrahim361r@gmail.com</p>
                     </div>
                 </div>
                 <div className='bg-[#111827] md:w-1/2'>

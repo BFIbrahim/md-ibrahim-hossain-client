@@ -1,19 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 
-const fileURL = 'Md._Ibrahim_developer_resume.pdf'
 
 
 const Navigation = () => {
 
-    const hundleDownloadResume = (url) => {
-        const angcor = document.createElement('a')
-        angcor.href = url
-        angcor.setAttribute('download', "Md. Ibrahim developer resume.pdf")
-        document.body.appendChild(angcor)
-        angcor.click()
-        angcor.remove()
+    const hundleAlert = (e) => {
+        e.preventDefault()
+        Swal.fire({
+            icon: 'error',
+            title: 'Comming Soon',
+            text: 'No Blog Yet',
+        })
+
     }
 
     return (
@@ -24,23 +25,20 @@ const Navigation = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-sky-500 " fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><Link className='hover:text-white hover:font-semibold'>Home</Link></li>
-
-                        <li><Link className='hover:text-white hover:font-semibold'>About</Link></li>
-
-                        <li><Link className='hover:text-white hover:font-semibold'>Projects</Link></li>
-
-                        <li><Link className='hover:text-white hover:font-semibold'>Blog</Link></li>
+                        <li className='text-sky-500 '><a href='#about' className='hover:text-white hover:font-semibold'>About</a></li>
+                        <li className='text-sky-500 '><a href='#project' className='hover:text-white hover:font-semibold'>Projects</a></li>
+                        <li className='text-sky-500 '><a href='#skills' className='hover:text-white hover:font-semibold'>Skills</a></li>
+                        <li className='text-sky-500 '><Link onClick={hundleAlert} className='hover:text-white hover:font-semibold'>Blog</Link></li>
                     </ul>
                 </div>
                 <img className='ps-5 w-12' src="https://i.postimg.cc/g0NXBD9d/layers.png" alt="" />
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li className='text-sky-500 '><Link className='hover:text-white hover:font-semibold'>Home</Link></li>
                     <li className='text-sky-500 '><a href='#about' className='hover:text-white hover:font-semibold'>About</a></li>
                     <li className='text-sky-500 '><a href='#project' className='hover:text-white hover:font-semibold'>Projects</a></li>
-                    <li className='text-sky-500 '><Link className='hover:text-white hover:font-semibold'>Blog</Link></li>
+                    <li className='text-sky-500 '><a href='#skills' className='hover:text-white hover:font-semibold'>Skills</a></li>
+                    <li className='text-sky-500 '><Link onClick={hundleAlert} className='hover:text-white hover:font-semibold'>Blog</Link></li>
                 </ul>
             </div>
             <div className="navbar-end">
