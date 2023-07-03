@@ -16,7 +16,7 @@ const Projects = () => {
 
     return (
         <div id='project' className='text-center mt-14 mb-20'>
-            <h1 className=' font-bold md:text-4xl text-center pt-10 mb-10 uppercase border-sky-500 text-white md:w-2/6 mx-auto border-b-2 pb-3'>My Recent Projects</h1>
+            <h1 className=' font-bold md:text-4xl text-center pt-10 mb-10 uppercase border-sky-500 text-white w-2/4 mx-auto border-b-2 pb-3'>My Recent Projects</h1>
 
             <ScrollTrigger onEnter={() => { setCounterON(true) }} onExit={() => { setCounterON(false) }}>
                 <div className='p-5 shadow-[0_10px_15px_rgba(8,_112,_184,_0.7)] w-56 mx-auto rounded-md bg-sky-500 text-white mb-14'>
@@ -28,11 +28,11 @@ const Projects = () => {
             </ScrollTrigger>
 
 
-            <div data-aos="fade-up"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="1000" className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-0 lg:gap-0 p-5 md:p-0 lg:p-0'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-0 lg:gap-0 p-5 md:p-0 lg:p-0'>
 
-                <div className="md:w-[300px] h-[300] base-100 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] mx-auto mb-14">
+                <div data-aos="zoom-in-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="500" className="md:w-[300px] h-[300] base-100 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] mx-auto mb-14">
                     <figure><img className='rounded-t-md' src="https://i.ibb.co/bzC1TNr/4.jpg" alt="Shoes" /></figure>
 
                     <div className='grid grid-cols-3 shadow-[0_10px_15px_rgba(8,_112,_184,_0.7)]'>
@@ -44,7 +44,9 @@ const Projects = () => {
                     </div>
                 </div>
 
-                <div className="md:w-[300px] h-[300] base-100 mx-auto shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] mb-14">
+                <div data-aos="zoom-in-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="500" className="md:w-[300px] h-[300] base-100 mx-auto shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] mb-14">
                     <figure><img className='rounded-t-md' src="https://i.ibb.co/t4LzXfK/1.jpg " alt="Shoes" /></figure>
                     <div className='grid grid-cols-3 shadow-[0_10px_15px_rgba(8,_112,_184,_0.7)]'>
                         <Link to='https://bfmi-school.web.app/' target='_default'><button className='hover:bg-sky-700 btn bg-sky-500 w-full font-bold rounded-none h-16 text-white'><FaArrowAltCircleRight className='text-2xl text-white'></FaArrowAltCircleRight> Live Site </button></Link>
@@ -55,7 +57,9 @@ const Projects = () => {
                     </div>
                 </div>
 
-                <div className="md:w-[300px] h-[300] base-100 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] mx-auto mb-14">
+                <div  data-aos="zoom-in-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="500" className="md:w-[300px] h-[300] base-100 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] mx-auto mb-14">
                     <figure><img className='rounded-t-md' src="https://i.ibb.co/HPb5Hf2/5.jpg" alt="Shoes" /></figure>
                     <div className='grid grid-cols-2 shadow-[0_10px_15px_rgba(8,_112,_184,_0.7)]'>
                         <Link to='https://illustrious-pothos-dfd739.netlify.app/' target='_default'><button className='hover:bg-sky-700 btn bg-sky-500 w-full font-bold rounded-none h-16 text-white'><FaArrowAltCircleRight className='text-2xl text-white'></FaArrowAltCircleRight> Live Site </button></Link>
@@ -67,7 +71,9 @@ const Projects = () => {
                 </div>
 
                 
-                <div className="md:w-[300px] h-[300] base-100 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] mx-auto  mb-14">
+                <div  data-aos="zoom-in-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="500" className="md:w-[300px] h-[300] base-100 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] mx-auto  mb-14">
                     <figure><img className='rounded-t-md' src="https://i.ibb.co/ccjKnTV/2.jpg" alt="Shoes" /></figure>
                     <div className='grid grid-cols-2 shadow-[0_10px_15px_rgba(8,_112,_184,_0.7)]'>
                         <Link to='https://bfibrahim.github.io/Architect-Responsive-Website/' target='_default'><button className='hover:bg-sky-700 btn bg-sky-500 w-full font-bold rounded-none h-16 text-white'><FaArrowAltCircleRight className='text-2xl text-white'></FaArrowAltCircleRight> Live Site </button></Link>
@@ -78,7 +84,9 @@ const Projects = () => {
                     </div>
                 </div>
 
-                <div className="md:w-[300px] h-[300] base-100 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] mx-auto  mb-14">
+                <div  data-aos="zoom-in-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="500" className="md:w-[300px] h-[300] base-100 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] mx-auto  mb-14">
                     <figure><img className='rounded-t-md' src="https://i.ibb.co/CVMzDbg/6.jpg" alt="Shoes" /></figure>
                     <div className='grid grid-cols-2 shadow-[0_10px_15px_rgba(8,_112,_184,_0.7)]'>
                         <Link to='https://elaborate-tulumba-a6fd68.netlify.app/' target='_default'><button className='hover:bg-sky-700 btn bg-sky-500 w-full font-bold rounded-none h-16 text-white'><FaArrowAltCircleRight className='text-2xl text-white'></FaArrowAltCircleRight> Live Site </button></Link>
@@ -89,7 +97,9 @@ const Projects = () => {
                     </div>
                 </div>
 
-                <div className="md:w-[300px] h-[300] base-100 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] mx-auto  mb-14">
+                <div  data-aos="zoom-in-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="500" className="md:w-[300px] h-[300] base-100 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] mx-auto  mb-14">
                     <figure><img className='rounded-t-md' src="https://i.ibb.co/7GHctzn/3.jpg" alt="Shoes" /></figure>
                     <div className='grid grid-cols-2 shadow-[0_10px_15px_rgba(8,_112,_184,_0.7)]'>
                         <Link to='https://transcendent-quokka-3e2348.netlify.app/' target='_default'><button className='btn bg-sky-500 w-full font-bold rounded-none h-16 text-white  hover:bg-sky-700'><FaArrowAltCircleRight className='text-2xl text-white'></FaArrowAltCircleRight> Live Site </button></Link>

@@ -34,7 +34,7 @@ const Contact = () => {
             <div className='grid md:grid-cols-1 lg:grid-cols-2 items-center'>
                 <div data-aos="fade-up"
                     data-aos-easing="ease-out-cubic"
-                    data-aos-duration="1000" className='md:w-3/6 grid grid-cols-3 md:grid-cols-1 mb-14 mx-auto md:mx-auto lg:mx-0'>
+                    data-aos-duration="1000" className='md:w-3/6 grid grid-cols-1 mb-14 mx-auto md:mx-auto lg:mx-0'>
                     <div className='md:w-72 rounded-t-sm bg-gray-800 p-5 text-center shadow-[0_5px_20px_rgba(8,_112,_184,_0.7)]'>
                         <img className='w-14 h-14 mx-auto' src="https://i.ibb.co/8gqfm4q/telephone-1.png" alt="" />
                         <h1 className='text-[18px] font-semibold mt-4 text-white'>+8801835-992202</h1>
@@ -60,19 +60,19 @@ const Contact = () => {
                                         <label className="label">
                                             <span className="label-text text-white">Name</span>
                                         </label>
-                                        <input type="text" name='from_name' placeholder="Your Name" className="input border-gray-700 text-white bg-gray-900" />
+                                        <input type="text" name='from_name' placeholder="Your Name" className="input border-gray-700 text-white shadow-[0_0px_10px_rgba(8,_112,_184,_0.7)] bg-gray-900" />
                                     </div>
                                     <div className="form-control">
                                         <label className="label">
                                             <span className="label-text text-white">Email</span>
                                         </label>
-                                        <input type="text" name='from_email' placeholder="email" className="input border-gray-700 text-white bg-gray-900" required/>
+                                        <input type="text" name='from_email' placeholder="email" className="input border-gray-700 shadow-[0_0px_10px_rgba(8,_112,_184,_0.7)] text-white bg-gray-900" required/>
                                     </div>
                                     <div className="form-control">
                                         <label className="label">
                                             <span className="label-text text-white">Message</span>
                                         </label>
-                                        <textarea type="text" name="message" placeholder="Write your message here" className="input h-36 bg-gray-900 border-gray-700 text-white" required />
+                                        <textarea type="text" name="message" placeholder="Write your message here" className="input shadow-[0_0px_10px_rgba(8,_112,_184,_0.7)] h-36 bg-gray-900 border-gray-700 text-white" required />
                                     </div>
                                     <div className="form-control mt-6">
                                         <input type="submit" value="send" className='bg-sky-500 w-full btn border-none text-white hover:text-black' />

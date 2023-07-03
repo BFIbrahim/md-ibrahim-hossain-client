@@ -13,12 +13,12 @@ const Skills = () => {
     return (
     
             <div id='skills' className='p-10  mt-10'>
-                <h1 className='text-center font-bold text-3xl uppercase mb-10 border-sky-500 border-b-2 text-white pb-3 w-56 mx-auto'>My Top Skills</h1>
-                <div  data-aos="fade-up"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="1000" className='grid md:grid-cols-2 lg:grid-cols-2 gap-5'>
+                <h1 className='text-center font-bold md:text-3xl uppercase mb-10 border-sky-500 border-b-2 text-white pb-3 w-56 mx-auto'>My Top Skills</h1>
+                <div  className='grid md:grid-cols-2 lg:grid-cols-2 gap-5'>
                     
-                    <div className='flex items-center gap-5'>
+                    <div data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000" className='flex items-center gap-5'>
                         <div className='flex items-center gap-5'>
                             <p className=' w-24 h-24 rounded-full flex items-center justify-center shadow-[0_0px_10px_rgba(8,_112,_184,_0.7)]'><Lottie className='' animationData={HTMLAnimation} /></p>
 
@@ -29,7 +29,9 @@ const Skills = () => {
                         </div>
                     </div>
 
-                    <div className='flex items-center gap-5'>
+                    <div data-aos="flip-right"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000" className='flex items-center gap-5'>
                         <div className='flex items-center gap-5'>
                             <p className=' w-24 h-24 rounded-full flex items-center justify-center shadow-[0_0px_10px_rgba(8,_112,_184,_0.7)]'><Lottie className='' animationData={CSSAnimation} /></p>
 
@@ -39,7 +41,10 @@ const Skills = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='flex items-center gap-5'>
+
+                    <div data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000" className='flex items-center gap-5'>
                         <div className='flex items-center gap-5'>
                             <p className=' w-24 h-24 rounded-full flex items-center justify-center shadow-[0_0px_10px_rgba(8,_112,_184,_0.7)]'><img className='w-14 h-14' src="https://i.postimg.cc/nhSdrS5F/Tailwind.png" alt="" /></p>
 
@@ -49,7 +54,10 @@ const Skills = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='flex items-center gap-5'>
+
+                    <div  data-aos="flip-right"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000" className='flex items-center gap-5'>
                         <div className='flex items-center gap-5'>
                             <p className=' w-24 h-24 rounded-full flex items-center justify-center shadow-[0_0px_10px_rgba(8,_112,_184,_0.7)]'><img className='w-14 h-14' src="https://i.postimg.cc/90XTGCRv/Bootstrap.png" alt="" /></p>
 
@@ -59,7 +67,10 @@ const Skills = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='flex items-center gap-5'>
+
+                    <div data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000" className='flex items-center gap-5'>
                         <div className='flex items-center gap-5'>
                             <p className=' w-24 h-24 rounded-full flex items-center justify-center shadow-[0_0px_10px_rgba(8,_112,_184,_0.7)]'><Lottie className='w-40 h-40' animationData={JSAnimation} /></p>
 
@@ -69,7 +80,10 @@ const Skills = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='flex items-center gap-5'>
+
+                    <div  data-aos="flip-right"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000" className='flex items-center gap-5'>
                         <div className='flex items-center gap-5'>
                             <p className=' w-24 h-24 rounded-full flex items-center justify-center shadow-[0_0px_10px_rgba(8,_112,_184,_0.7)]'><Lottie className='w-20 h-20' animationData={ReactAnimation} /></p>
 
@@ -79,7 +93,10 @@ const Skills = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='flex items-center gap-5'>
+
+                    <div  data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000" className='flex items-center gap-5'>
                         <div className='flex items-center gap-5'>
                             <p className=' w-24 h-24 rounded-full flex items-center justify-center shadow-[0_0px_10px_rgba(8,_112,_184,_0.7)]'><Lottie className='' animationData={NodeJsAnimation} /></p>
 
@@ -89,7 +106,10 @@ const Skills = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='flex items-center gap-5'>
+
+                    <div  data-aos="flip-right"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000" className='flex items-center gap-5'>
                         <div className='flex items-center gap-5'>
                             <p className=' w-24 h-24 rounded-full flex items-center justify-center shadow-[0_0px_10px_rgba(8,_112,_184,_0.7)]'><Lottie className='' animationData={MongoAnimation} /></p>
 
